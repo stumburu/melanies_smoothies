@@ -23,7 +23,7 @@ my_dataframe,max_selections = 5)
 
 if ingredients_list:
     ingredients_string = ' '
-    for fruit_choosen in ingredients_list:
+    for fruit_chosen in ingredients_list:
         ingredients_string += fruit_choosen + ' '
         st. subheader (fruit_chosen + ' Nutrition Information')
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_chosen)
